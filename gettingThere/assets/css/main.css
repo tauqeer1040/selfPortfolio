@@ -1308,7 +1308,7 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
-			
+			background: #25D366;
 		}
 
 			#header .logo .icon:before {
