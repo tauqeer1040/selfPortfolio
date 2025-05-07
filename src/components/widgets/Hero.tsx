@@ -49,10 +49,14 @@ export default component$(() => {
                   </a>
                 </div>
                 <div class="flex w-full sm:w-auto justify-center items-center gap-8 sm:gap-8">
-                <a href="https://instagram.com/desilifter_" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/desilifter_" target="_blank"
+                aria-label="Visit DesiLifter on Instagram"
+                title="Visit DesiLifter on Instagram" rel="noopener noreferrer"
+                >
   <LuInstagram class="w-12 h-12 text-pink-500 hover:text-pink-700" />
 </a>
-                <a href="https://x.com/desilifter" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/desilifter" target="_blank" rel="noopener noreferrer"  aria-label="Visit DesiLifter on Twitter"
+  title="Visit DesiLifter on Twitter" >
   <LuTwitter class="w-12 h-12 text-blue-500 hover:text-blue-700" />
 </a>
 
