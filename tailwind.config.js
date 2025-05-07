@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: colors.purple,
-        secondary: colors.sky,
+        secondary: colors.yellow,
       },
       fontFamily: {
         sans: ["'Inter Variable'", ...defaultTheme.fontFamily.sans],

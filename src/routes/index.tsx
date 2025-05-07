@@ -86,7 +86,7 @@ export default component$(() => {
               "Not at all. Most posts are short and actionable, perfect for students or working professionals. You’ll get tips that take less than 2 minutes to read and apply.",
           },
           {
-            title: "W💊 Do I need supplements?",
+            title: "💊 Do I need supplements?",
             description:
               "No. Supplements are optional — we focus on results through food and smart training. We only recommend a few safe, affordable basics like whey and creatine, if at all.",
           },
