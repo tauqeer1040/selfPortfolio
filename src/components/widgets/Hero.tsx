@@ -11,16 +11,22 @@ export default component$(() => {
   return (
     <section class="relative md:-mt-[76px] not-prose">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="relative mx-auto w-screen px-4 sm:px-6">
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-        <div class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
-          <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
-            <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
-            Welcome to the<br class="hidden lg:block" />{" "}
+        <div class="py-12 md:py-20 lg:flex lg:items-center lg:h-screen lg:w-screen lg:gap-8">
+          <div class="flex-none text-center lg:text-left pb-10 md:pb-16 mx-auto md:ml-28">
+            {/* <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
+            Welcome to the<br class="hidden" />{" "}
             <br />
-           <span class="text-[#e5d066]">DesiLifter</span>{" "}
-           <br />
-              <span class="sm:whitespace-nowrap ">Blog</span>
+            <span class="text-[#e5d066]">DesiLifter</span>{" "}
+            <br />
+            <span class="sm:whitespace-nowrap ">Blog</span> */}
+            <h1 class="w-full max-w-screen text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
+              Welcome to the
+                <br class="sm:block lg:hidden"/>
+               <span class="text-[#e5d066]"> DesiLifter </span> 
+               <br class="sm:block lg:hidden"/>
+               blog
             </h1>
             <div class="max-w-3xl mx-auto lg:max-w-none">
               <p class="text-xl text-muted mb-6 dark:text-slate-300">
