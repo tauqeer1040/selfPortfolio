@@ -11,16 +11,26 @@ export default component$(() => {
   return (
     <section class="relative md:-mt-[76px] not-prose">
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="relative mx-auto w-screen px-4 sm:px-6">
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-        <div class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
-          <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
-            <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
-            Welcome to the<br class="hidden lg:block" />{" "}
+        <div class="py-12 md:py-20 lg:flex lg:items-center lg:justify-center lg:align-center  lg:h-screen lg:w-screen lg:gap-8 ">
+          <div class="flex-none text-center pb-10 md:pb-16 mx-auto max-w-screen w-[100vw]
+          
+          ">
+           {/* md:ml-28 */}
+
+            {/* <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
+            Welcome to the<br class="hidden" />{" "}
             <br />
-           <span class="text-[#e5d066]">DesiLifter</span>{" "}
-           <br />
-              <span class="sm:whitespace-nowrap ">Blog</span>
+            <span class="text-[#e5d066]">DesiLifter</span>{" "}
+            <br />
+            <span class="sm:whitespace-nowrap ">Blog</span> */}
+            <h1 class="w-full max-w-screen text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
+              Welcome to the
+                <br class="sm:block lg:hidden"/>
+               <span class="text-[#e5d066]"> DesiLifter </span> 
+               <br class="sm:block lg:hidden"/>
+               blog
             </h1>
             <div class="max-w-3xl mx-auto lg:max-w-none">
               <p class="text-xl text-muted mb-6 dark:text-slate-300">
@@ -34,7 +44,7 @@ export default component$(() => {
                 </span> */}
               </p>
 
-              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
+              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:m-0 lg:max-w-[100vw]">
                 <div class="flex w-full sm:w-auto text-[#111827]">
                   <a
                     class="btn sm:mb-0 w-full bg-[#e5d066] color-[#111827] text:dark-[#111827]"
@@ -48,12 +58,12 @@ export default component$(() => {
                     </strong>
                   </a>
                 </div>
-                <div class="flex w-full sm:w-auto justify-center items-center gap-8 sm:gap-8">
+                <div class="flex w-full sm:w-auto justify-center items-center sm:gap-8 gap-8 ">
                 <a href="https://instagram.com/desilifter_" target="_blank"
                 aria-label="Visit DesiLifter on Instagram"
                 title="Visit DesiLifter on Instagram" rel="noopener noreferrer"
                 >
-  <LuInstagram class="w-12 h-12 text-pink-500 hover:text-pink-700" />
+  <LuInstagram class=" w-12 h-12 text-pink-500 hover:text-pink-700" />
 </a>
                 <a href="https://x.com/desilifter" target="_blank" rel="noopener noreferrer"  aria-label="Visit DesiLifter on Twitter"
   title="Visit DesiLifter on Twitter" >
