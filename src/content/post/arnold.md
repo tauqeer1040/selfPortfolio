@@ -1,4 +1,10 @@
-# The Desi Guide to Bodybuilding: What Arnold Taught Us About Lifting in India 🇮🇳
+---
+title: "Old-School Bodybuilding Desi Style: What I Learned from Arnold’s Book"
+description: "Arnold's classic blueprint, now filtered through the lens of Indian food, culture, and jugaad training style. Lift like it’s 1975, desi edition."
+publishDate: "2025-05-10"
+tags: ["arnold", "indian bodybuilding", "old-school", "gym", "training"]
+---
+
 
 Arnold Schwarzenegger’s legendary *Encyclopedia of Modern Bodybuilding* laid the foundation for generations of lifters worldwide. But how do you take those classic principles and apply them to the crowded gyms, vegetarian diets, and 6-day Indian workweeks?
 

@@ -1,4 +1,10 @@
-# “5 Desi Food Swaps That’ll Help You Cut Fat Without Hating Your Life”
+---
+title: “5 Desi Food Swaps That’ll Help You Cut Fat Without Hating Your Life”
+description: "Budget protein hacks, Indian thali tweaks, and meal tricks every desi lifter needs to know. Bulk smart, not just heavy."
+publishDate: "2025-05-10"
+tags: ["nutrition", "budget meals", "indian diet", "protein hacks", "desi gym"]
+---
+
 
 If cutting fat feels like torture, especially in an Indian household filled with ghee, parathas, and laddoos — don’t worry.
 

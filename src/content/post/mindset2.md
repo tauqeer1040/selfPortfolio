@@ -1,4 +1,9 @@
-# Stop Waiting, Start Doing: The Brutal Mindset Shift Every Indian Lifter Needs
+---
+title: "How to Build a Monster Mindset (Desi Edition Inspired by David Goggins)"
+description: "Tired of quitting on yourself? Here's how to toughen your brain and build unshakeable mental muscle—desi-style, Goggins-approved."
+publishDate: "2025-05-10"
+tags: ["mindset", "goggins", "mental toughness", "discipline", "desi fitness"]
+---
 
 Everyone’s waiting.
 

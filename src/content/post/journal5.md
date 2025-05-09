@@ -1,4 +1,10 @@
-# How to Build a Gym Journal You’ll Actually Use (Even If You’ve Quit 5 Times Before)
+---
+title: "How to Build a Gym Journal You’ll Actually Use (Even If You’ve Quit 5 Times Before)"
+description: "Here’s how to apply Atomic Habits to your workouts with just a pen, paper, and five minutes a day. Consistency is your new pre-workout."
+publishDate: "2025-05-10"
+tags: ["journaling", "atomic habits", "consistency", "desi fitness", "mental game"]
+---
+
 
 You start a new workout plan, swear you’ll stay consistent… and then life happens. You miss one day. Then two. Suddenly, you're ghosting your gains.
 

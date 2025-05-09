@@ -1,4 +1,10 @@
-# Why Every Indian Lifter Should Start Running — Even Just a Little
+---
+title: "Why Every Indian Lifter Should Start Running — Even Just a Little"
+description: "Running isn’t the enemy of gains. It’s your secret weapon for better recovery, fat loss, and mental toughness — desi style."
+publishDate: "2025-05-11"
+tags: ["cardio", "running", "indian fitness", "mindset", "recovery"]
+---
+
 
 Think cardio is for skinny dudes chasing medals?  
 Think again, bhai.
