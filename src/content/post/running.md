@@ -36,7 +36,7 @@ You don’t need fancy supplements or overpriced gels.
 
 Just eat smart, desi-style. One of our favorite go-to’s?
 
-👉🏽 [This banana-peanut butter sandwich slaps for pre-run energy.](./peanutButterBananaSandwich.md)
+👉🏽 [This banana-peanut butter sandwich slaps for pre-run energy.](https://desilifter.pro/blog/peanutButterBananaSandwich)
 
 Bananas give you carbs and potassium. Peanut butter adds fat and protein. The combo?  
 **Sustained energy and zero crash.**
@@ -49,7 +49,7 @@ Running tests your brain more than your body.
 
 That’s why guys like **David Goggins swear by it** — it forces you into discomfort, then teaches you to love the fight.
 
-👉🏽 [Read how to build that monster mindset — desi edition.](./mindset1.md)
+👉🏽 [Read how to build that monster mindset — desi edition.](https://desilifter.pro/blog/mindset1)
 
 You don’t need to run ultra-marathons. But a weekly 5K at your own pace can **toughen your brain faster than any podcast ever will**.
 
@@ -66,7 +66,7 @@ Start with:
 - Reflecting on your discipline (not just performance)
 
 Need help? Try this guide on fitness journaling for desi lifters:
-👉🏽 [The Journal Cheat Code for Consistency.](./journal5.md)
+👉🏽 [The Journal Cheat Code for Consistency.](https://desilifter.pro/blog/journal5)
 
 ---
 

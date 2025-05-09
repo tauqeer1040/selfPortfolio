@@ -26,7 +26,7 @@ Here’s how to make a **Banana Peanut Butter Power Sandwich** that’s fast, sw
 - Pinch of salt (brings out flavor)  
 
 👉🏽 *Curious about peanut butter for desi diets?*  
-[Check out our full blog on peanut butter power for Indian lifters.](./peanutButterBananaSandwich.md)
+[Check out our full blog on peanut butter power for Indian lifters.](https://desilifter.pro/blog/peanutbutter)
 
 ---
 
