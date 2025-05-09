@@ -8,7 +8,7 @@ tags: ["protein", "air fryer", "paneer", "indian food", "muscle meals"]
 
 If you’ve got an air fryer, you’re sitting on a **desi muscle-building machine**.
 
-Already loved our [banana-peanut butter muscle sandwich?](./sandwich.md)  
+Already loved our [banana-peanut butter muscle sandwich?](https://desilifter.pro/blog/peanutbutterbananasandwich)  
 
 This one is your **savory, crunchy upgrade**.
 This **air-fried paneer sandwich** is crispy, protein-packed, and doesn’t need a drop of oil.  
