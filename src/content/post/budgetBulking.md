@@ -1,4 +1,10 @@
-# What Every Indian Gym Bro Needs to Know About Bulking on a Budget — Before You Waste Another Rupee on Mass Gainers
+---
+title: "What Every Indian Gym Bro Needs to Know About Bulking on a Budget (Read This Before Your Next Grocery Trip)"
+description: "Stop wasting money on fancy powders. Here’s how to bulk like a desi on a tight budget using smart local food hacks."
+publishDate: "2025-05-10"
+tags: ["bulking", "indian food", "budget fitness", "grocery tips", "desi gym"]
+---
+
 
 Building muscle in India isn’t about imported protein powders or eating chicken every 3 hours. With the right desi hacks, you can bulk like a beast — even on a tight budget.
 

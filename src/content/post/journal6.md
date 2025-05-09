@@ -1,4 +1,10 @@
-# This 1 Desi Habit Can Keep You Consistent All Year (Even If You’re a Serial Quitter)
+---
+title: "This 1 Desi Habit Can Keep You Consistent All Year (Even If You’re a Serial Quitter)"
+description: "Atomic Habits meets desi discipline. Here’s the lazy lifter’s guide to tracking workouts and staying accountable—without burnout."
+publishDate: "2025-05-11"
+tags: ["journaling", "atomic habits", "desi fitness", "tracking", "consistency"]
+---
+
 
 Ever feel like you're always “starting over” in the gym?
 

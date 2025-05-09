@@ -1,4 +1,10 @@
-# This Air-Fried Paneer Sandwich Crunches Hard and Builds Muscle (No Oil Needed)
+---
+title: "This Air-Fried Paneer Sandwich Crunches Hard and Builds Muscle (No Oil Needed)"
+description: "Your air fryer just became your secret weapon for desi muscle gains. Try this spicy paneer sandwich that hits your macros without the oil."
+publishDate: "2025-05-11"
+tags: ["protein", "air fryer", "paneer", "indian food", "muscle meals"]
+---
+
 
 If you’ve got an air fryer, you’re sitting on a **desi muscle-building machine**.
 

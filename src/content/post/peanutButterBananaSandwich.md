@@ -1,4 +1,11 @@
-# This High-Protein Sandwich Tastes Like Dessert But Builds Muscle (Desi-Style)
+---
+title: "This High-Protein Sandwich Tastes Like Dessert But Builds Muscle (Desi-Style)"
+description: "This peanut butter, banana, and honey sandwich is a budget-friendly, desi-approved muscle meal that tastes like a cheat day dessert."
+publishDate: "2025-05-11"
+tags: ["protein", "indian food", "budget bulking", "sandwich", "desi lifter"]
+---
+
+# 
 
 Got a sweet tooth *and* fitness goals?
 
