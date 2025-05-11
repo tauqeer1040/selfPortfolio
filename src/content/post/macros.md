@@ -60,6 +60,7 @@ Perfect for lunch or post-workout.
 Whether you're eating dal-chawal, rajma-rice, or roti-sabzi, just know what’s on your plate.  
 Track your macros. Lift heavy. And maybe carry a tennis ball next time you portion dal 😉
 
----
 
-Got a food you want added to this chart? Drop me a message—I'll find a funny reference for it.
+
+*Got a food you want added to this chart? Drop me a message—I'll find a funny reference for it.*
+---

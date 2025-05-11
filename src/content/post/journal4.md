@@ -57,3 +57,5 @@ I kept mine tucked in my gym bag. Pen it down between sets. Simple.
     Cable Flyes – 3×12 @ 12kg
 🧠 Notes: PR on bench. Felt strong. Slept 8 hrs.
 🍛 Meals: 3 eggs, 2 rotis, whey, rajma chawal
+```
+---
