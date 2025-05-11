@@ -100,7 +100,7 @@ export const findPostBySlug = async (slug: string): Promise<Post | null> => {
       content
     };
   } catch (e) {
-    console.log(e.message);
+    /* empty */
   }
 
   return null;
