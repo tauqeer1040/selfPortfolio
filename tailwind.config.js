@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: colors.purple,
         secondary: colors.yellow,
+        gold: '#e5d066',
       },
       fontFamily: {
         sans: ["'Inter Variable'", ...defaultTheme.fontFamily.sans],
