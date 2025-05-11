@@ -1,7 +1,8 @@
+---
 title: "Desilifter Bulking: Clean Gains with Indian Foods"
- description: "Ready to bulk up the desi way? Discover high-calorie, protein-rich Indian foods that help you gain muscle without the extra fat. #Desilifter #Bulking #IndianFitness"
- publishDate: "2025-05-07"
- tags: ["desilifter", "bulking", "Indian diet", "muscle gain", "high calorie", "weight gain"]
+description: "Ready to bulk up the desi way? Discover high-calorie, protein-rich Indian foods that help you gain muscle without the extra fat. #Desilifter #Bulking #IndianFitness"
+publishDate: "2025-05-07"
+tags: ["desilifter", "bulking", "Indian diet", "muscle gain", "high calorie", "weight gain"]
  ---
 
  ## Clean Bulking: The Desi Way

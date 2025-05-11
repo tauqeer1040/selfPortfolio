@@ -103,6 +103,5 @@ Making peanut butter at home is:
 
 > Save money, flex harder, and never buy overpriced spreads again.
 
+*Want a video reel version? Lemme know on my socials.*
 ---
-
-Want a video reel version? Lemme know on my socials.
