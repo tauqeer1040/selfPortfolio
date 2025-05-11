@@ -1,8 +1,7 @@
----
 title: "Desilifter Diet Basics: Hit Your Protein with Indian Foods"
-description: "Struggling to get enough protein on an Indian diet? Here's how desilifters use dal, paneer, eggs and whey to fuel muscle growth the BLS way."
-publishDate: "2025-05-07"
-tags: ["desilifter", "protein intake", "Indian diet", "BLS nutrition", "muscle gain"]
+ description: "Struggling to get enough protein on an Indian diet? Here's how desilifters use dal, paneer, eggs and whey to fuel muscle growth the BLS way."
+ publishDate: "2025-05-07"
+ tags: ["desilifter", "protein intake", "Indian diet", "BLS nutrition", "muscle gain"]
  ---
 
  ## Why Protein is King in the BLS Diet

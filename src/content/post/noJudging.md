@@ -38,38 +38,9 @@ Let’s break it down, so nothing surprises you:
 - Comfortable sportswear and shoes
 - A phone or notebook to track your workout
 
-
 ### 🏋️ What to Do:
-
 Start with a **simple full-body routine**:
-
--    5 minutes warm-up (treadmill, cycling)
-
- -   Bodyweight squats – 3 sets of 10
-
--    Push-ups (on knees if needed) – 3 sets of 8–10
-
--    Lat pulldown or assisted pull-ups – 3 sets of 8
-
--    Dumbbell shoulder press – 3 sets of 10
-
--    10 minutes walk or light cycling to cool down
-
-🤝 What Might Surprise You:
-
- -   People may offer help if they see you struggling with form, equipment, or setup.
-
--    Someone might share tips or even become your regular gym buddy.
-
- -   You’ll feel amazing after your session—even if your muscles are sore.
-
-*Pro Tip*: Be Consistent, Not Perfect
-
-The biggest flex isn’t a six-pack. It’s showing up. Especially when it’s hard.
-
-Don’t worry about the perfect workout, the best shoes, or the “right” time to join. Just get started. Make it a part of your routine. Learn as you go.
-
-And soon, the same gym that looked scary on Day 1 will become your second home.
-
-Desilifter Tip 💪: Try saying "Bhaiya, form theek hai?" to a regular. You’ll be surprised how fast a friendship starts. The gym isn't a battlefield—it’s a brotherhood.
----
+- 5 minutes warm-up (treadmill, cycling)
+- Bodyweight squats – 3 sets of 10
+- Push-ups (on knees if needed) – 3 sets of 8–10
+- Lat pul

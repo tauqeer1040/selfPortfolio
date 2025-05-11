@@ -7,35 +7,21 @@ import type { Post } from "~/types";
 import md from "markdown-it";
 
 import { fetchPosts, findPostBySlug } from "~/utils/posts";
-import { Suggestions } from "~/components/widgets/Suggestions";
-import { getRelatedPosts } from "~/utils/suggestions";
 
-export const useGetPostBySlug = routeLoader$(async ({ params, status }): Promise<Post | number> => {
+export const useGetPostBySlug = routeLoader$(async ({ params, status }) => {
   const post = await findPostBySlug(params.slug);
-  if (!post) return status(404);
-  return post;
-});
 
-export const useRelatedPosts = routeLoader$(async (requestEvent) => {
-  const currentPost = await requestEvent.resolveValue(useGetPostBySlug);
-  // Handle the case where currentPost is a status code
-  if (typeof currentPost === 'number') {
-    return [];
+  if (!post) {
+    return status(404);
   }
-  const allPosts = await fetchPosts();
-  return getRelatedPosts(allPosts, currentPost.slug);
+
+  return post as Post;
 });
 
 export default component$(() => {
-  const postSignal = useGetPostBySlug();
-  const relatedPosts = useRelatedPosts().value;
+  const signal = useGetPostBySlug();
 
-  // Handle the case where post is a status code
-  if (typeof postSignal.value === 'number') {
-    return <div>Post not found</div>;
-  }
-
-  const post = postSignal.value;
+  const post = signal.value as Post;
 
   return (
     <section class="mx-auto py-8 sm:py-16 lg:py-20">
@@ -77,13 +63,10 @@ export default component$(() => {
             html: true,
           }).render(post.content)}
         />
-        <Suggestions links={relatedPosts} />
       </article>
     </section>
   );
 });
-
-// ... rest of your code remains the same ...
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
   const posts = await fetchPosts();
