@@ -7,54 +7,21 @@ import type { Post } from "~/types";
 import md from "markdown-it";
 
 import { fetchPosts, findPostBySlug } from "~/utils/posts";
-import { Suggestions } from "~/components/widgets/Suggestions";
-import { getRelatedPosts } from "~/utils/suggestions";
 
-// Initialize markdown-it once outside components
-const markdownRenderer = md({
-  html: true,
-  linkify: true,
-  typographer: true
-});
+export const useGetPostBySlug = routeLoader$(async ({ params, status }) => {
+  const post = await findPostBySlug(params.slug);
 
-export const useGetPostBySlug = routeLoader$(async ({ params, status }): Promise<Post | null> => {
-  try {
-    const post = await findPostBySlug(params.slug);
-    if (!post) {
-      status(404);
-      return null;
-    }
-    return post;
-  } catch (error) {
-    status(500);
-    return null;
+  if (!post) {
+    return status(404);
   }
-});
 
-export const useRelatedPosts = routeLoader$(async (requestEvent) => {
-  const currentPost = await requestEvent.resolveValue(useGetPostBySlug);
-  if (!currentPost) return [];
-  
-  const allPosts = await fetchPosts();
-  return getRelatedPosts(allPosts, currentPost.slug);
+  return post as Post;
 });
 
 export default component$(() => {
-  const postSignal = useGetPostBySlug();
-  const relatedPosts = useRelatedPosts();
+  const signal = useGetPostBySlug();
 
-  if (!postSignal.value) {
-    return (
-      <section class="mx-auto py-8 sm:py-16 lg:py-20">
-        <div class="container mx-auto max-w-3xl px-6 text-center">
-          <h1 class="text-4xl font-bold text-center">Post not found</h1>
-        </div>
-      </section>
-    );
-  }
-
-  const post = postSignal.value;
-  const renderedContent = markdownRenderer.render(post.content);
+  const post = signal.value as Post;
 
   return (
     <section class="mx-auto py-8 sm:py-16 lg:py-20">
@@ -96,13 +63,10 @@ export default component$(() => {
             html: true,
           }).render(post.content)}
         />
-        {relatedPosts.value.length > 0 && <Suggestions links={relatedPosts.value} />}
       </article>
     </section>
   );
 });
-
-// ... rest of your code remains the same ...
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
   const posts = await fetchPosts();
