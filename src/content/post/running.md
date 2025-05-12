@@ -99,4 +99,3 @@ It’s **cardio + weights = total domination**.
 
 ### 🏷️ Tags:
 `#IndianFitness #RunningForLifters #CardioGains #DesiLifter #MindsetCardio #DesiRunningRoutine`
----

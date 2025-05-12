@@ -12,4 +12,3 @@ You walk into the gym, check your biceps in the mirror, and think, “Aaj kya ka
 **Stop.** That’s not how you build muscle.
 
 *Bigger Leaner Stronger* gives us a clear roadmap. And here
----

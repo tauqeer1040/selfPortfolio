@@ -7,58 +7,39 @@ import { fetchPosts, findPostBySlug } from "~/utils/posts";
 import { Suggestions } from "~/components/widgets/Suggestions";
 import { getRelatedPosts } from "~/utils/suggestions";
 
-// Initialize markdown-it once outside components
-const markdownRenderer = md({
-  html: true,
-  linkify: true,
-  typographer: true
-});
-
-export const useGetPostBySlug = routeLoader$(async ({ params, status }): Promise<Post | null> => {
-  try {
-    const post = await findPostBySlug(params.slug);
-    if (!post) {
-      status(404);
-      return null;
-    }
-    return post;
-  } catch (error) {
-    status(500);
-    return null;
-  }
+export const useGetPostBySlug = routeLoader$(async ({ params, status }): Promise<Post | number> => {
+  const post = await findPostBySlug(params.slug);
+  if (!post) return status(404);
+  return post;
 });
 
 export const useRelatedPosts = routeLoader$(async (requestEvent) => {
   const currentPost = await requestEvent.resolveValue(useGetPostBySlug);
-  if (!currentPost) return [];
-  
+  // Handle the case where currentPost is a status code
+  if (typeof currentPost === 'number') {
+    return [];
+  }
   const allPosts = await fetchPosts();
   return getRelatedPosts(allPosts, currentPost.slug);
 });
 
 export default component$(() => {
   const postSignal = useGetPostBySlug();
-  const relatedPosts = useRelatedPosts();
+  const relatedPosts = useRelatedPosts().value;
 
-  if (!postSignal.value) {
-    return (
-      <section class="mx-auto py-8 sm:py-16 lg:py-20">
-        <div class="container mx-auto max-w-3xl px-6 text-center">
-          <h1 class="text-4xl font-bold text-center">Post not found</h1>
-        </div>
-      </section>
-    );
+  // Handle the case where post is a status code
+  if (typeof postSignal.value === 'number') {
+    return <div>Post not found</div>;
   }
 
   const post = postSignal.value;
-  const renderedContent = markdownRenderer.render(post.content);
 
   return (
     <section class="mx-auto py-8 sm:py-16 lg:py-20">
       <article>
         <header class={post.image ? "text-center" : ""}>
           <p class="mx-auto max-w-3xl px-4 sm:px-6">
-            <time dateTime={post.publishDate.toISOString()}>
+            <time dateTime={String(post.publishDate.getTime())}>
               {post.publishDate.toLocaleDateString("en-us", {
                 year: "numeric",
                 month: "short",
@@ -88,33 +69,28 @@ export default component$(() => {
         </header>
         <div
           class="prose-md prose-headings:font-heading prose-headings:leading-tighter container prose prose-lg mx-auto mt-8 max-w-3xl px-6 prose-headings:font-bold prose-headings:tracking-tighter prose-a:text-primary-600 prose-img:rounded-md prose-img:shadow-lg dark:prose-invert dark:prose-headings:text-slate-300 dark:prose-a:text-primary-400 sm:px-6 lg:prose-xl"
-          dangerouslySetInnerHTML={renderedContent}
+          dangerouslySetInnerHTML={md({
+            html: true,
+          }).render(post.content)}
         />
-        {relatedPosts.value.length > 0 && <Suggestions links={relatedPosts.value} />}
+        <Suggestions links={relatedPosts} />
       </article>
     </section>
   );
 });
 
+// ... rest of your code remains the same ...
+
 export const onStaticGenerate: StaticGenerateHandler = async () => {
   const posts = await fetchPosts();
-  const validPosts = posts.filter(post => !post.draft);
-  // Filter out draft posts if needed
-  const publishedPosts = validPosts.filter(post => !post.draft);
 
   return {
-    params: publishedPosts.map(({ slug }) => ({ slug })),
+    params: posts.map(({ slug }) => ({ slug })),
   };
 };
 
 export const head: DocumentHead = ({ resolveValue }) => {
-  const post = resolveValue(useGetPostBySlug);
-  
-  if (!post) {
-    return {
-      title: "Post Not Found - Desilifter",
-    };
-  }
+  const post = resolveValue(useGetPostBySlug) as Post;
 
   return {
     title: `${post.title} — Desilifter`,
@@ -123,19 +99,6 @@ export const head: DocumentHead = ({ resolveValue }) => {
         name: "description",
         content: post.excerpt,
       },
-      // Open Graph meta tags for better sharing
-      {
-        property: "og:title",
-        content: post.title,
-      },
-      {
-        property: "og:description",
-        content: post.excerpt,
-      },
-      ...(post.image ? [{
-        property: "og:image",
-        content: post.image,
-      }] : []),
     ],
   };
 };
