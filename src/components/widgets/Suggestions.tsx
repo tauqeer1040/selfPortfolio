@@ -10,9 +10,10 @@ interface SuggestionItem {
 
 interface SuggestionsProps {
   links: SuggestionItem[];
+  title: string
 }
 
-export const Suggestions = component$<SuggestionsProps>(({ links }) => {
+export const Suggestions = component$<SuggestionsProps>(({ links, title }) => {
   if (!links.length) return null;
 
   return (
@@ -20,7 +21,7 @@ export const Suggestions = component$<SuggestionsProps>(({ links }) => {
     <div class="pt-8 dark:border-slate-700 p-6">
 
     
-          <h2 class="mb-6 text-2xl font-bold dark:text-slate-300">Also Read</h2>
+          <h2 class="mb-6 text-3xl font-bold dark:text-slate-300 text-center text-gold">{title}</h2>
           <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {links.map(({ name, url, excerpt, image }) => (
               <div key={url} class="group relative">
