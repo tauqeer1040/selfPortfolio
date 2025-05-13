@@ -10,7 +10,7 @@ export const RouterHead = component$(() => {
 
   return (
     <>
-      <title>{"DesiLifter.pro"}</title>
+      <title>{"DesiLifter.pro | Natural Bodybuilding Tips for Indians"}</title>
 
       <link rel="canonical" href={String(loc.url)} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

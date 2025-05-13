@@ -33,6 +33,7 @@ export default component$(() => {
   }
 
   const post = postSignal.value;
+  
 
   return (
     <section class="mx-auto py-8 sm:py-16 lg:py-20">
@@ -73,7 +74,7 @@ export default component$(() => {
             html: true,
           }).render(post.content)}
         />
-        <Suggestions links={relatedPosts} />
+        <Suggestions links={relatedPosts} title="Also Read" />
       </article>
     </section>
   );

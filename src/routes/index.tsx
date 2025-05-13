@@ -1,12 +1,24 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Hero from "~/components/widgets/Hero";
 import Features from "~/components/widgets/Features";
 // import Steps from "~/components/widgets/Steps";
 import FAQs from "~/components/widgets/FAQs";
-// import Stats from "~/components/widgets/Stats";
+import Stats from "~/components/widgets/Stats";
 import CallToAction from "~/components/widgets/CallToAction";
+
+const manualList = [
+  { name: "Start Here: Bigger Leaner Stronger for Indian Lifters",url:"/blog/blsIndia/", },
+  { name: "Gym Looks Scary? It’s Actually Super Friendly for Newbies", url: "/blog/nojudging/", },
+  { name: "This High-Protein Sandwich Tastes Like Dessert But Builds Muscle (Desi-Style)", url: "/blog/peanutbutterbananasandwich/", },
+  { name: "Do Your Parents Think Protein Powder = Steroids?", url: "/blog/parents/",  },
+  // { name: "The Importance of Sleep and Recovery", url: "/blog/sleepRecovery/", excerpt: "Why sleep and recovery are crucial for progress." },
+];
+{/* <Suggestions links={manualList} /> */}
+
+import { Suggestions } from "~/components/widgets/Suggestions";
+
 
 import { qwikSerialized } from "~/utils/qwikSerialized";
 
@@ -17,6 +29,7 @@ const IconRocket = qwikSerialized(() => import("../components/icons/IconRocket")
 // const IconBulb = qwikSerialized(() => import("../components/icons/IconBulb"));
 
 import { SITE } from "~/config.mjs";
+// import { Suggestions } from "~/components/widgets/Suggestions";
 
 export default component$(() => {
   return (
@@ -98,7 +111,8 @@ export default component$(() => {
           
         ]}
       />
-      {/* <Stats /> */}
+      <Stats />
+      <Suggestions links={manualList} title="Start Reading Here"/>
       <CallToAction />
     </>
   );
