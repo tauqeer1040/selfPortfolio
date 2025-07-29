@@ -6,34 +6,34 @@ export default component$(() => {
       <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
         <div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0">
           <div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-gold font-heading">
-            1K+
+            50K+
           </div>
           <p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-            Daily Visitors
+            Average Revenue Generated
           </p>
         </div>
         <div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0">
           <div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-gold font-heading">
-            24.8K+
+            500+
           </div>
           <p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-            users
+            Github Contributions
           </p>
         </div>
         <div class="text-center md:border-r dark:md:border-slate-500 font-heading">
           <div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-gold">
-            10.3K+
+            40+
           </div>
           <p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-            Likes
+            Full-stack projects
           </p>
         </div>
         <div class="text-center">
           <div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-gold font-heading">
-            48.4K+
+            5+
           </div>
           <p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-            Visitors across socials
+            Tech Stacks Mastered
           </p>
         </div>
       </div>

@@ -1,12 +1,11 @@
 export const SITE = {
-  name: "DesiLifter",
+  name: "Tauqeer Ahmed",
 
-  title:
-    "Desilifter.pro",
+  title: "Tauqeer Ahmed.pro",
   description:
     "Follow for easy daily tips and reminders on natural bodybuilding, made especially for Indians.",
 
-  origin: "https://desilifter.pro/",
+  origin: "https://Tauqeer Ahmed.pro/",
   basePathname: "/",
   trailingSlash: true,
 };

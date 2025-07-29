@@ -7,27 +7,26 @@ export default component$(() => {
         <div class="py-12 md:py-20">
           <div class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl dark:shadow-none">
             <h2 class="text-4xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
-              <span class="text-[#e5d066]">Desilifter.pro</span> {" "}
+              <span class="text-[#e5d066]">` Tao-kh-ir `</span> {" "}
               <br class="block sm:hidden" />
               {/* <span class="text-[#039de1] sm:whitespace-nowrap">
                 Tailwind CSS
               </span> */}
             </h2>
             <p class="text-xl text-gray-600 dark:text-slate-400">
-              Get to reading. <br class="hidden md:inline" />
-              Don't waste more time!
+             Feel free to reach out.
             </p>
 
             <div class="mt-6">
               <a
                 class="btn bg-[#e5d066] mb-4 sm:mb-0 w-full sm:w-auto"
-                href="/blog/"
+                href="mailto:tauqeer1040@gmail.com"
                 target="_blank"
                 rel="noopener"
               >
                 <p class="text-[#111827]">
 
-                Read Blog
+                Email
                 </p>
               </a>
             </div>

@@ -1,30 +1,59 @@
-import { component$, } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Hero from "~/components/widgets/Hero";
 import Features from "~/components/widgets/Features";
-// import Steps from "~/components/widgets/Steps";
+import Steps from "~/components/widgets/Steps";
 import FAQs from "~/components/widgets/FAQs";
 import Stats from "~/components/widgets/Stats";
 import CallToAction from "~/components/widgets/CallToAction";
 
-const manualList = [
-  { name: "Start Here: Bigger Leaner Stronger for Indian Lifters",url:"/blog/blsIndia/", },
-  { name: "Gym Looks Scary? It’s Actually Super Friendly for Newbies", url: "/blog/nojudging/", },
-  { name: "This High-Protein Sandwich Tastes Like Dessert But Builds Muscle (Desi-Style)", url: "/blog/peanutbutterbananasandwich/", },
-  { name: "Do Your Parents Think Protein Powder = Steroids?", url: "/blog/parents/",  },
-  // { name: "The Importance of Sleep and Recovery", url: "/blog/sleepRecovery/", excerpt: "Why sleep and recovery are crucial for progress." },
+// const manualList = [
+//   { name: "Start Here: Bigger Leaner Stronger for Indian Lifters",url:"/blog/blsIndia/", },
+//   { name: "Gym Looks Scary? It’s Actually Super Friendly for Newbies", url: "/blog/nojudging/", },
+//   { name: "This High-Protein Sandwich Tastes Like Dessert But Builds Muscle (Desi-Style)", url: "/blog/peanutbutterbananasandwich/", },
+//   { name: "Do Your Parents Think Protein Powder = Steroids?", url: "/blog/parents/",  },
+//   // { name: "The Importance of Sleep and Recovery", url: "/blog/sleepRecovery/", excerpt: "Why sleep and recovery are crucial for progress." },
+// ];
+
+const projectList = [
+  {
+    name: "Tauqeer Ahmed.pro – Fitness Blog Built for Speed",
+    url: "http://Tauqeer Ahmed.pro",
+  },
+  {
+    name: "Fresno Art Museum Web App",
+    url: "http://fam-redesign.netlify.app/",
+  },
+  {
+    name: "MauJo: Cross-Platform Cafe & Hostel App",
+    url: "https://maujo.netlify.app/",
+  },
+  {
+    name: "Fontella Cosmetics – Shopify Site Optimized for Conversions",
+    url: "https://fontellacosmetics.com/",
+  },
+  {
+    name: "GitHub: 500+ Commits, 40+ Repos, & Projects on Numerous Tech Stacks",
+    url: "https://github.com/tauqeer1040",
+  },
 ];
-{/* <Suggestions links={manualList} /> */}
+
+{
+  /* <Suggestions links={manualList} /> */
+}
 
 import { Suggestions } from "~/components/widgets/Suggestions";
 
-
 import { qwikSerialized } from "~/utils/qwikSerialized";
 
-const IconBrandTailwind = qwikSerialized(() => import("../components/icons/IconBrandTailwind"));
+const IconBrandTailwind = qwikSerialized(
+  () => import("../components/icons/IconBrandTailwind"),
+);
 const IconApps = qwikSerialized(() => import("../components/icons/IconApps"));
-const IconRocket = qwikSerialized(() => import("../components/icons/IconRocket"));
+const IconRocket = qwikSerialized(
+  () => import("../components/icons/IconRocket"),
+);
 // const IconBrandGoogle = qwikSerialized(() => import("../components/icons/IconBrandGoogle"));
 // const IconBulb = qwikSerialized(() => import("../components/icons/IconBulb"));
 
@@ -33,9 +62,9 @@ import { SITE } from "~/config.mjs";
 
 export default component$(() => {
   return (
-    <>
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <Hero />
-      <Features
+      {/* <Features
         highlight="Why?"
         title="The Value You Get"
         subtitle=""
@@ -76,45 +105,77 @@ export default component$(() => {
           //   icon: IconBulb
           // },
         ]}
+      /> */}
+      <Features
+        highlight="Why Me?"
+        title="What I Bring to the Table"
+        subtitle="You’re not just hiring a dev, you're bringing on a growth engine."
+        items={[
+          {
+            title: "Battle-Tested Full-Stack Experience",
+            description:
+              "From React frontends to MongoDB backends, I’ve delivered scalable solutions for U.S. startups and Indian SMBs alike. Fast, clean, and maintainable.",
+            icon: IconApps,
+          },
+          {
+            title: "UI/UX That Converts",
+            description:
+              "Design isn't just about looks — it's about flow. I build interfaces users love and businesses profit from. Speed indices and conversion-focused layouts guaranteed.",
+            icon: IconRocket,
+          },
+          {
+            title: "Cross-Platform & API-Driven",
+            description:
+              "Whether it's Google Maps integrations, Twitch extensions, or REST/GraphQL APIs — I wire up the modern web like a pro.",
+            icon: IconBrandTailwind,
+          },
+          {
+            title: "SEO, Speed, and Scalability",
+            description:
+              "Sites I build load fast, rank well, and scale gracefully. Ask my clients — they’ve made over $50K with the sites I delivered.",
+          },
+        ]}
       />
-      {/* <Steps /> */}
+
       <FAQs
-        title="Frequently Asked Questions"
+        title="Recruiter FAQs"
         subtitle=""
         highlight="FAQs"
         items={[
           {
-            title: "🏋️‍♂️ What kind of training does this blog recommend?",
+            title: "🧑‍💻 What’s your tech stack?",
             description:
-              "We follow the 3–2–1 training split — 3 heavy compound lifts, 2 moderate sets, and 1 isolation pump finisher. It’s based on strength-focused, natural bodybuilding adapted from the Bigger Leaner Stronger method.",
+              "Mainly MERN (MongoDB, Express, React, Node.js), plus Tailwind, TypeScript, GraphQL, Flutter, Firebase, Docker, and more. I adapt to what the project needs.",
           },
           {
-            title: "🍛 Is this blog Indian-diet friendly?",
+            title: "🌍 Do you work remotely?",
             description:
-              "Yes! Every tip considers common Indian foods like dal, paneer, rice, and roti. Whether you're veg, non-veg, or on a budget, we’ve got options for you.",
+              "Yes! I’ve worked with teams in Los Angeles, Europe, and India. Comfortable with async workflows, SCRUM, and timezone overlap.",
           },
           {
-            title: "⏰ I’m busy. Are the tips time-consuming?",
+            title: "⚙️ Do you build full-stack apps solo?",
             description:
-              "Not at all. Most posts are short and actionable, perfect for students or working professionals. You’ll get tips that take less than 2 minutes to read and apply.",
+              "Absolutely. From the backend architecture to the frontend design and deployment — I’ve delivered dozens of full-stack apps end to end.",
           },
           {
-            title: "💊 Do I need supplements?",
+            title: "🚀 Can you optimize existing sites?",
             description:
-              "No. Supplements are optional — we focus on results through food and smart training. We only recommend a few safe, affordable basics like whey and creatine, if at all.",
+              "Yes. I improve load times, SEO, mobile responsiveness, and UI polish. Many clients saw direct sales and engagement boosts post-optimization.",
           },
           {
-            title: "🇮🇳 Is this just a copy of Western fitness advice?",
+            title: "🎓 Are you open to collaboration?",
             description:
-              "No. We take inspiration from proven systems but adapt everything for Indian lifestyles — including sleep patterns, food habits, gym access, and cultural factors.",
+              "100%. Whether it’s contract work, startup gigs, or open-source collabs — I’m all ears. Let’s build something amazing.",
           },
-          
         ]}
       />
+
       <Stats />
-      <Suggestions links={manualList} title="Start Reading Here"/>
+      <Suggestions links={projectList} title="My Portfolio" highlight="Work" />
+      <Steps />
+
       <CallToAction />
-    </>
+    </div>
   );
 });
 

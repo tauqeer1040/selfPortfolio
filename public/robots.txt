@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
  
-Sitemap: https://desilifter.pro/sitemap.xml
+Sitemap: https://Tauqeer Ahmed.pro/sitemap.xml

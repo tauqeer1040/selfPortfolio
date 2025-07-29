@@ -182,5 +182,5 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, You can contact us:
 
-- O Instagram: Desilifter_
-- On Twitter: Desilifter
+- O Instagram: Tauqeer Ahmed_
+- On Twitter: Tauqeer Ahmed

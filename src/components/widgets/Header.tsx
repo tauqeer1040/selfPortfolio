@@ -81,7 +81,7 @@ export default component$(() => {
             <div class="flex">
               <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
             </div>
-            <span class="ml-4 rtl:ml-0 rtl:mr-4">
+            {/* <span class="ml-4 rtl:ml-0 rtl:mr-4">
               <a
                 href="/blog/"
                 class="btn bg-[#e5d066] ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto"
@@ -91,7 +91,7 @@ export default component$(() => {
                 Blog
                 </p>
               </a>
-            </span>
+            </span> */}
           </div>
         </div>
       </div>

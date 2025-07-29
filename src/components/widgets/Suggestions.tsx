@@ -1,5 +1,6 @@
 // src/components/widgets/Suggestions.tsx
 import { component$ } from "@builder.io/qwik";
+import { Headline } from "../ui/Headline";
 
 interface SuggestionItem {
   name: string;
@@ -10,18 +11,28 @@ interface SuggestionItem {
 
 interface SuggestionsProps {
   links: SuggestionItem[];
-  title: string
+  title: string;
+  highlight: string
 }
 
-export const Suggestions = component$<SuggestionsProps>(({ links, title }) => {
+export const Suggestions = component$<SuggestionsProps>(({ links, title, highlight }) => {
   if (!links.length) return null;
 
   return (
     
     <div class="pt-8 dark:border-slate-700 p-6">
 
-    
-          <h2 class="mb-6 text-3xl font-bold dark:text-slate-300 text-center text-gold">{title}</h2>
+     <Headline
+          title={title}
+          // subtitle={subtitle}
+          highlight={highlight}
+          // classes={{
+          //   container: "max-w-xl sm:mx-auto lg:max-w-2xl",
+          //   title: "sm:text-4xl text-3xl",
+          //   ...(classes?.headline ?? {}),
+          // }}
+        />
+          {/* <h2 class="mb-6 text-3xl font-bold dark:text-slate-300 text-center text-gold">{title}</h2> */}
           <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {links.map(({ name, url, excerpt, image }) => (
               <div key={url} class="group relative">
@@ -51,7 +62,7 @@ export const Suggestions = component$<SuggestionsProps>(({ links, title }) => {
                     href={url}
                     class="mt-auto inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-400"
                   >
-                    Read more
+                    Visit site
                     <svg
                       class="ml-1 h-4 w-4"
                       fill="currentColor"
