@@ -14,92 +14,66 @@ export default component$(() => {
         class="pointer-events-none absolute inset-0"
         aria-hidden="true"
       ></div>
-      <div class="relative mx-auto w-screen px-4 sm:px-6">
+      <div class="relative mx-auto px-4 sm:px-6">
         <div class="pointer-events-none pt-0 md:pt-[76px]"></div>
-        <div class="lg:align-center flex flex-col py-12 md:py-20 lg:items-center lg:justify-center lg:gap-8">
-          <div class="block text-center">
-            <Image
-              src={coverImage}
-              layout="constrained"
-              width={300}
-              height={300}
-              alt="Hero Image"
-              class="mx-auto w-full rounded-full drop-shadow-2xl lg:mr-0"
-              priority={true}
-              breakpoints={[320, 480, 640, 768, 1024]}
-            />
-            {/* <p>🔖 Bookmark the site now!</p> */}
-          </div>
+        <div class="lg:align-center flex flex-col py-12 md:py-2 lg:items-center lg:justify-center m-auto">
+  <div class="flex flex-col items-center justify-center w-full max-w-3xl px-4">
+    {/* Image */}
+    <Image
+      src={coverImage}
+      layout="constrained"
+      width={300}
+      height={300}
+      alt="Hero Image"
+      class="mx-auto w-full max-w-[300px] rounded-full drop-shadow-2xl"
+      priority={true}
+      breakpoints={[320, 480, 640, 768, 1024]}
+    />
 
-          <div class="max-w-screen mx-auto flex-none pb-10 text-center sm:w-[90vw] md:pb-16 lg:w-[90vw]">
-            {/* md:ml-28 */}
+    {/* Green Section */}
+    <div class="w-full text-center pb-10 md:pb-16 mt-8 px-4 rounded-lg">
+      <h1 class="leading-tighter font-heading mb-4 text-5xl font-bold leading-[1.2] tracking-tighter dark:text-gray-200 md:text-6xl">
+        <span class="text-[#e5d066]">Tauqeer Ahmed</span>
+        <br />
+        <span class="text-3xl italic tracking-tight">3+ years of experience</span>
+      </h1>
 
-            {/* <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
-            Welcome to the<br class="hidden" />{" "}
-            <br />
-            <span class="text-[#e5d066]">Tauqeer Ahmed</span>{" "}
-            <br />
-            <span class="sm:whitespace-nowrap ">Blog</span> */}
-            <h1 class="max-w-screen leading-tighter font-heading mb-4 w-full text-5xl font-bold leading-[1.2] tracking-tighter dark:text-gray-200 md:text-6xl">
-              {/* Welcome to the */}
-              {/* <br class="sm:block lg:hidden"/> */}
-              <span class="text-[#e5d066]">Tauqeer Ahmed</span>
-              <br class="sm:block lg:block" />
+      <p class="text-muted mb-6 text-xl dark:text-slate-300">
+        Ask to get your perfect website tailor-made by a passionate expert.
+      </p>
 
-              <span class="text-3xl italic tracking-tight">
-                3+ years of experience
-              </span>
-            </h1>
-            <div class="mx-auto max-w-3xl lg:max-w-none">
-              <p class="text-muted mb-6 text-xl dark:text-slate-300">
-                {/* <span class="font-semibold underline decoration-wavy decoration-1 decoration-secondary-600 underline-offset-2">
-                  Qwind
-                </span>{" "} */}
-                Ask to get your perfect website tailor-made by a passionate
-                expert.
-              </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a
+          class="btn bg-[#e5d066] text-[#111827] dark:text-[#111827]"
+          href="/resume/Tauqeer%20Ahmed%20Resume.pdf"
+          download="Tauqeer_Ahmed_Resume.pdf"
+        >
+          <p class="font-semibold">Download Resume</p>
+        </a>
 
-              <div class="m-auto flex max-w-xs flex-col flex-wrap gap-4 sm:max-w-md sm:flex-row sm:justify-center lg:m-0 lg:max-w-[100vw]">
-                <div class="flex w-full text-[#111827] sm:w-auto">
-                  <a
-                    class="btn w-full bg-[#e5d066] text-[#111827] dark:text-[#111827] sm:mb-0"
-                    href="/resume/Tauqeer%20Ahmed%20Resume.pdf"
-                    download="Tauqeer_Ahmed_Resume.pdf"
-                  >
-                    <strong>
-                      <p class="text-[#111827]">Download Resume</p>
-                    </strong>
-                  </a>
-                </div>
-
-                <div class="mt-2 flex w-full items-center justify-center gap-8 sm:w-auto sm:gap-4">
-                  <a
-                    href="https://github.com/tauqeer1040"
-                    target="_blank"
-                    aria-label="Visit Tauqeer on Github"
-                    title="Visit Tauqeer on Github"
-                    rel="noopener noreferrer"
-                  >
-                    {/* <LuInstagram class=" w-12 h-12 text-pink-500 hover:text-pink-700" /> */}
-                    <LuGithub class="h-12 w-12 text-purple-500 dark:hover:text-white" />
-                  </a>
-                  <a
-                    href="https://x.com/KatKawPose"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Tauqeer on Twitter"
-                    title="Visit Tauqeer on Twitter"
-                  >
-                    <LuTwitter class="h-12 w-12 text-blue-500 hover:text-blue-700" />
-                  </a>
-                </div>
-              </div>
-              {/* <div class="mt-4">
-                <p>🔖 Bookmark the site now!</p>
-              </div> */}
-            </div>
-          </div>
+        <div class="flex items-center justify-center gap-6">
+          <a
+            href="https://github.com/tauqeer1040"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <LuGithub class="h-12 w-12 text-purple-500 dark:hover:text-white" />
+          </a>
+          <a
+            href="https://x.com/KatKawPose"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <LuTwitter class="h-12 w-12 text-blue-500 hover:text-blue-700" />
+          </a>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );
