@@ -1,11 +1,11 @@
 export const SITE = {
   name: "Tauqeer Ahmed",
 
-  title: "Tauqeer Ahmed.pro",
+  title: "Tauqeer Ahmed",
   description:
-    "Follow for easy daily tips and reminders on natural bodybuilding, made especially for Indians.",
+    "Ask to get your perfect website tailor-made by a passionate expert.",
 
-  origin: "https://Tauqeer Ahmed.pro/",
+  origin: "",
   basePathname: "/",
   trailingSlash: true,
 };

@@ -11,12 +11,13 @@ export const RouterHead = component$(() => {
   return (
     <>
       <title>
-        {"Tauqeer Ahmed.pro | Natural Bodybuilding Tips for Indians"}
+        {"Tauqeer Ahmed | Web Developer First Choice"}
       </title>
 
       <link rel="canonical" href={String(loc.url)} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/svg+xml" href="./flexed-biceps.svg" />
+      <link rel="icon" type="image/webp" href="/images/man-technologist_1f468-200d-1f4bb.webp" />
+
 
       {head.meta.map((m, i) => (
         <meta key={i} {...m} />
