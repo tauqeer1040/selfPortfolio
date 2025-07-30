@@ -41,7 +41,7 @@ export default component$(() => {
                 <span class="text-[#e5d066]">Tauqeer Ahmed</span>
                 {/* <br /> */}
               </h1>
-                <h2 class=" text-xl italic mt-5 text-white leading-tight">
+                <h2 class=" text-xl italic mt-5 leading-tight text-gray-800 dark:text-white">
                   {experienceYears}+ years of experience
                 </h2>
 
