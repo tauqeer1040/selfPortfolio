@@ -62,7 +62,7 @@ import { SITE } from "~/config.mjs";
 
 export default component$(() => {
   return (
-    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <div class="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8 lg:py-20">
       <Hero />
       {/* <Features
         highlight="Why?"
