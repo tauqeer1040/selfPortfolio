@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
-import { LuGithub, LuTwitter } from "@qwikest/icons/lucide";
+import { LuGithub, LuLinkedin} from "@qwikest/icons/lucide";
+
 
 const coverImage = "images/96075407.jpeg";
 const getYearsOfExperience = () => {
@@ -41,13 +42,28 @@ export default component$(() => {
                 <span class="text-[#e5d066]">Tauqeer Ahmed</span>
                 {/* <br /> */}
               </h1>
-                <h2 class=" text-xl italic mt-5 leading-tight text-gray-800 dark:text-white">
+                <h2 class="text-base italic mt-2 leading-tight text-gray-800 dark:text-white">
                   {experienceYears}+ years of experience
                 </h2>
+                <h2 class=" text-lg mt-2 leading-tight text-gray-800 dark:text-white">
+                  Master's Degree in Computer Applications
+                </h2>
+                
 
-              <p class="text-muted mt-4 mb-6 text-lg md:text-xl dark:text-slate-300">
+              <h6 class="italic mt-10 mb-6 text-lg text-base text-gray-500">
                 Ask to get your perfect website tailor-made by a passionate expert.
-              </p>
+              </h6>
+
+              {/* <h2 class="text-sm italic mt-2 leading-tight text-gray-700 dark:text-gray-300">
+  {experienceYears}+ years of experience
+</h2>
+<p class="text-base mt-1 leading-snug text-gray-800 dark:text-white">
+  Master's Degree in Computer Applications
+</p>
+<p class="italic mt-6 mb-4 text-base leading-relaxed text-gray-500">
+  Ask to get your perfect website tailor-made by a passionate expert.
+</p> */}
+
 
               <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a
@@ -68,12 +84,12 @@ export default component$(() => {
                     <LuGithub class="h-10 w-10 text-purple-500 dark:hover:text-white" />
                   </a>
                   <a
-                    href="https://x.com/KatKawPose"
+                    href="https://www.linkedin.com/in/tauqeerahmed100/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Twitter"
+                    aria-label="linkedin"
                   >
-                    <LuTwitter class="h-10 w-10 text-blue-500 hover:text-blue-700" />
+                    <LuLinkedin class="h-10 w-10 text-blue-500 hover:text-blue-700" />
                   </a>
                 </div>
               </div>

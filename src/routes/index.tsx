@@ -18,8 +18,8 @@ import CallToAction from "~/components/widgets/CallToAction";
 
 const projectList = [
   {
-    name: "Tauqeer Ahmed.pro – Fitness Blog Built for Speed",
-    url: "http://Tauqeer Ahmed.pro",
+    name: "Desilifter.pro – Fitness Blog Built for Speed",
+    url: "http://desilifter.pro",
   },
   {
     name: "Fresno Art Museum Web App",
